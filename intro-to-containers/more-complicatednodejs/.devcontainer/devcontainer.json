@@ -1,0 +1,22 @@
+{
+     "name": "Frontend Masters Sample",
+     "dockerFile": "Dockerfile",
+     "appPort": [3000],
+     "runArgs": ["-u", "node"],
+      "customizations": {
+           "vscode": {
+                "settings": {
+                     "workbench.colorTheme": "Dark Chai",
+                     // "workbench.colorTheme": "Hot Dog Stand",
+                     "terminal.integrated.shell.linux": "/bin/bash"
+                },
+                "extensions": [
+                    // "somekittens.hot-dog-stand",
+                    "sdras.night-owl",
+                    "dbaeumer.vscode-eslint",
+                    "esbenp.prettier-vscode"
+               ]
+           }
+      },
+     "postCreateCommand": "npm install"
+   }
